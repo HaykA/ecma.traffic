@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta name="author" content="Hayk AVETISYAN"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
+
+    <title>Traffic Lights</title>
+</head>
+
+<body>
+<header>
+    <h1></h1>
+</header>
+<main>
+    <div class="road">
+        <div class="section">
+            <div class="empty"></div>
+            <div class="street street-v rotate-90">
+                <div class="tlight tlight-cars">
+                    <div class="green"></div>
+                    <div class="orange"></div>
+                    <div class="red"></div>
+                </div>
+                <div class="tlight tlight-people">
+                    <div class="green"></div>
+                    <div class="red"></div>
+                </div>
+                <button type="button" class="allow-people"><i class="fa fa-hand-pointer-o"></i></button>
+            </div>
+            <div class="empty"></div>
+        </div>
+        <div class="section">
+            <div class="street street-h rotate-0">
+                <div class="tlight tlight-cars">
+                    <div class="green"></div>
+                    <div class="orange"></div>
+                    <div class="red"></div>
+                </div>
+                <div class="tlight tlight-people">
+                    <div class="red"></div>
+                    <div class="green"></div>
+                </div>
+                <button type="button" class="allow-people"><i class="fa fa-hand-pointer-o"></i></button>
+            </div>
+            <div class="crossing"></div>
+            <div class="street street-h rotate-180">
+                <div class="tlight tlight-cars">
+                    <div class="red"></div>
+                    <div class="orange"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="tlight tlight-people">
+                    <div class="green"></div>
+                    <div class="red"></div>
+                </div>
+                <button type="button" class="allow-people"><i class="fa fa-hand-pointer-o"></i></button>
+            </div>
+        </div>
+        <div class="section">
+            <div class="empty"></div>
+            <div class="street street-v rotate-270">
+                <div class="tlight tlight-cars">
+                    <div class="red"></div>
+                    <div class="orange"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="tlight tlight-people">
+                    <div class="red"></div>
+                    <div class="green"></div>
+                </div>
+                <button type="button" class="allow-people"><i class="fa fa-hand-pointer-o"></i></button>
+            </div>
+            <div class="empty"></div>
+        </div>
+    </div>
+</main>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

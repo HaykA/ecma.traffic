@@ -1,0 +1,212 @@
+body {
+    background-image: url('../media/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:  100vw 100vh;
+}
+
+.street {
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% auto;
+}
+
+.road {
+    width: 95vmin;
+    height: 95vmin;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section > * {
+    float: left;
+}
+.section:before,
+.section:after {
+    content: "";
+    display: table;
+}
+.section:after {
+    clear: both;
+}
+
+.empty {
+    background-image: url('../media/playground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    width: 37.5%;
+    height: 35.625vmin;
+}
+
+.crossing {
+    width: 25%;
+    height: 23.75vmin;
+    background-image: url('../media/crossing.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rotate-0,
+.rotate-180 {
+    width: 37.5%;
+    height: 23.75vmin;
+}
+
+.rotate-0 {
+    background-image: url('../media/street.svg');
+}
+
+.rotate-180 {
+    background-image: url('../media/street-180.svg');
+}
+
+.rotate-90,
+.rotate-270 {
+    width: 25%;
+    height: 35.625vmin;
+}
+
+.rotate-90 {
+    background-image: url('../media/street-90.svg');
+}
+
+.rotate-270 {
+    background-image: url('../media/street-270.svg');
+}
+
+.allow-people {
+    background-color: orange;
+    cursor: pointer;
+    font-size: 3vmin;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+
+    width: 4.25vmin;
+    height: 4.25vmin;
+    position: absolute;
+}
+
+.allow-people:hover {
+    background-color: gold;
+}
+
+.allow-people:active {
+    background-color: darkorange;
+}
+
+.tlight {
+    position: absolute;
+}
+
+.tlight > * {
+    background-image: url('../media/light_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 4.25vmin;
+    height: 4.25vmin;
+
+}
+
+.rotate-180 .tlight-cars > *,
+.rotate-270 .tlight-people > *,
+.rotate-0 .tlight-cars > *,
+.rotate-90 .tlight-people > * {
+    float: left;
+}
+
+.rotate-0 .tlight-cars {
+    bottom: 1vmin;
+    right: 9vmin;
+}
+
+.rotate-0 .tlight-people  {
+    top: 1vmin;
+    right: 1.15vmin;
+}
+
+.rotate-0 .allow-people {
+    bottom: 1vmin;
+    right: 1.15vmin;
+}
+
+.rotate-90 .tlight-cars {
+    left: 1vmin;
+    bottom: 9vmin;
+}
+
+.rotate-90 .tlight-people {
+    right: 1vmin;
+    bottom: 1.15vmin;
+}
+
+.rotate-90 .allow-people {
+    left: 1vmin;
+    bottom: 1.15vmin;
+}
+
+.rotate-180 .tlight-cars {
+    top: 1vmin;
+    left: 9vmin;
+}
+
+.rotate-180 .tlight-people {
+    bottom: 1vmin;
+    left: 1.15vmin;
+}
+
+.rotate-180 .allow-people {
+    top: 1vmin;
+    left: 1.15vmin;
+}
+
+.rotate-270 .tlight-cars {
+    right: 1vmin;
+    top: 9vmin;
+}
+
+.rotate-270 .tlight-people {
+    left: 1vmin;
+    top: 1.15vmin;
+}
+
+.rotate-270 .allow-people {
+    right: 1vmin;
+    top: 1.15vmin;
+}
+
+.tlight:before,
+.tlight:after {
+    content: "";
+    display: table;
+}
+.tlight:after {
+    clear: both;
+}
+
+.tlight > .red {
+    background-color: #440000;
+}
+
+.tlight > .orange {
+    background-color: #451005;
+}
+
+.tlight > .green {
+    background-color: #001100;
+}
+
+.tlight > .red.active {
+    background-color: red;
+}
+
+.tlight > .green.active {
+    background-color: #17f800;
+}
+
+.tlight > .orange.active {
+    background-color: orange;
+}
